@@ -10,8 +10,8 @@ Since implementing the classic [flocking behavior on the CPU](https://github.com
 
 To those unfamiliar with the behavior and why it is so demanding, allow me to explain. Achieving the flocking algorithm requires the synthesis of 3 base steering behaviors; separation, cohesion, and alignment. **Separation** is the steering responsible for avoiding other crowding local boids, **cohesion** is responsible for drawing a boid *toward* the average location of other local boids, and *alignment* is responsible for steering toward the average heading of other local boids.
 <img align="left" src = "http://www.red3d.com/cwr/boids/images/separation.gif">
-<img align="middle" src = "http://www.red3d.com/cwr/boids/images/cohesion.gif">
-<img align="right" src = "http://www.red3d.com/cwr/boids/images/alignment.gif">
+<img align="left" src = "http://www.red3d.com/cwr/boids/images/cohesion.gif">
+<img align="left" src = "http://www.red3d.com/cwr/boids/images/alignment.gif">
 
 Simple in concept, but not so efficient in practice.
 
