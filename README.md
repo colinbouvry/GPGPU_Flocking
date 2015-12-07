@@ -32,9 +32,9 @@ After listening to one of Robert's [talks at NVScene](http://www.ustream.tv/reco
 
 Before even trying to implement any of the flocking sub-behaviors, I wanted to make sure I could work with a particle system that could easily and effortlessly give me the ability to have any particle in question query every other particle in the system. I would perform a simple neighbor count lookup and alter the particle's RGB in respect to this neighbor count to visualize the proper proximity and particle lookups.
 
-The first method I discovered was the frame buffer object (FBO) ping-pong 
+The first method I discovered [on the cinder forums](https://forum.libcinder.org/topic/on-my-way-towards-the-million) was the frame buffer object (FBO) ping-pong. This method worked with OpenGL's FBO, taking advantage of its ability to create user-defined framebuffers. Rather than interpreting texture pixel data as RGBA, this particle system used instead interpreted that data as XYZW, representing raw particle data.
 
-<img align="middle" src = "http://i.imgur.com/AxfrnrW.jpg">
+<img align="left" src = "http://i.imgur.com/AxfrnrW.jpg">
 
 
 
