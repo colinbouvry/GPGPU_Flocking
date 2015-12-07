@@ -66,4 +66,8 @@ Success! With nearest neighbors being properly calculated with no drop in FPS I 
 
 
 
+And here was the final result, unfortunately the video takes away a ton of quality.
+
+[![ScreenShot](http://i.imgur.com/MCRoBVc.png)](https://www.youtube.com/watch?v=45XUMm1FETw&feature=youtu.be)
+
 What set off to be an AI study gradually turned into a graphics study buy the end of it
