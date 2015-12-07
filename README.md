@@ -57,4 +57,11 @@ An [excellent write-up](http://programming4.us/multimedia/9888.aspx) goes into e
 <img align="right" src = "http://i.imgur.com/lOSca0A.png">
 Despite the promising outlook that Transform Feedback gave off, I never delved as far into an implementation as I did with an FBO ping-pong based particle system. Also, the methodology seemed to also be a bit *too* low level for what I wanted to get into. Luckily enough, I ran into an chapter in [this](https://books.google.com/books?id=Nwo0CgAAQBAJ&pg=PT700&lpg=PT700&dq=flocking+compute+shader&source=bl&ots=LoRVYlLst6&sig=FD1_GkEaXn5rDnwIPNMyiETCLWw&hl=en&sa=X&ved=0ahUKEwjhoITF7sXJAhUKdD4KHfYnCDEQ6AEIMTAF#v=onepage&q=flocking%20compute%20shader&f=false) book that goes into detail on compute shaders in regard to flocking. In an essence, compute shaders share a lot in common with transform feedback, but is morer high-end oriented.
 
+
+After pursuing the route of compute shader's, I was able to finally gather accurate particle and proximity data, as shown in this video: 
+[![ScreenShot](http://i.imgur.com/SOaOdzs.png)](https://www.youtube.com/watch?v=QaqU3IJbQAs)
+
+
+
+
 What set off to be an AI study gradually turned into a graphics study buy the end of it
