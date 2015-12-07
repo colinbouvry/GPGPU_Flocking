@@ -61,6 +61,8 @@ Despite the promising outlook that Transform Feedback gave off, I never delved a
 After pursuing the route of compute shader's, I was able to finally gather accurate particle and proximity data, as shown in this video: 
 [![ScreenShot](http://i.imgur.com/SOaOdzs.png)](https://www.youtube.com/watch?v=QaqU3IJbQAs)
 
+Success! With nearest neighbors being properly calculated with no drop in FPS I could then proceed to implement flocking all within the compute shader. Here is a small glimpse of that in main():
+<img align="right" src = "http://i.imgur.com/kfrNFcl.png">
 
 
 
