@@ -43,7 +43,7 @@ The best way to understand how an FBO works is from real-life example. To shamel
 >Now consider how you would do it if you had two buckets. You would fill the first bucket and then swap the second in under the >running tap. You then have the length of time it takes for the second bucket to fill in order to empty the first into the paddling >pool. When you return you can simply swap the buckets so that the first is now filling again, during which time you can empty the >second into the pool. This can be repeated until the pool is full. It is clear to see that this technique will fill the pool far >faster as there is much less time spent waiting, doing nothing, while buckets fill. This is analogous to double buffering. The tap >can be on all the time and does not have to wait while the processing is done."
 
 I quickly came to learn the downside of this system. As clever as it is, altering the pixel values on an incoming FBO in a fragment shader is not at all scalable. In a 1024 x 1024 FBO, one frame would equate to around 1 trillion texture lookups. Yikes. On top of this, calculating neighboring particles in general was extremely unsuccessful:
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+[![ScreenShot](http://i.imgur.com/Oy2u00V.png)](https://www.youtube.com/watch?v=QksTr9o-lcc)
 
 
 
