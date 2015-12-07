@@ -6,6 +6,8 @@
 #include "cinder/CameraUi.h"
 #include "cinder/Rand.h"
 #include "cinder/Utilities.h"
+#include <cstdio>
+
 
 using namespace ci;
 using namespace ci::app;
@@ -29,7 +31,7 @@ struct Particle
 #pragma pack(pop)
 
 //Number of particles to create.
-const int NUM_PARTICLES = static_cast<int>(60e3);
+//const int NUM_PARTICLES = static_cast<int>(60e3);
 
 class GPGPU_FlockingApp : public App {
   public:
@@ -63,10 +65,17 @@ private:
 	CameraPersp	mCam;
 	CameraUi mCamUi;
 	/*##############*/
+
+	int NUM_PARTICLES;
 };
 
 void GPGPU_FlockingApp::setup()
 {
+	if (getCommandLineArgs().size() > 1)
+		NUM_PARTICLES = std::atoi(getCommandLineArgs().at(1).c_str());
+	else
+		NUM_PARTICLES = 60000;
+
 	// CREATE TEMPORARY 
 	vector<Particle> particles;
 	particles.assign(NUM_PARTICLES, Particle());
