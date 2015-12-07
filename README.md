@@ -14,7 +14,7 @@ To those unfamiliar with the behavior and why it is so demanding, allow me to ex
 <img align="left" src = "http://www.red3d.com/cwr/boids/images/cohesion.gif">
 <img align="left" src = "http://www.red3d.com/cwr/boids/images/alignment.gif">
 
-Simple in concept, but not so efficient in practice. Performing this behavior comes in at O(n^2)
+Simple in concept, but not so efficient in practice. Performing this behavior comes in at **O(n^2)**. As you can imagine, things slow up very quickly for every new boid that enters the system.
 
 What set off to be an AI study gradually turned into a graphics study buy the end of it
 
