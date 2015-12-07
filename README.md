@@ -25,9 +25,13 @@ It doesn't take many Google searches to realize on of the best people in the gam
 <img align="left" src = "http://i.imgur.com/diTI9rE.jpg">
 <img align="left" src = "http://i.imgur.com/3v2dbJL.jpg">
 
+
 After listening to one of Robert's [talks at NVScene](http://www.ustream.tv/recorded/45396322#to00:24:54), I quickly came to understand that my boids would essentially need to be based within a particle system computed on the GPU, ideally through OpenGL and GLSL. This lead me on a search for some of the best ways to handle GPU based particle systems. In my search, I uncovered three main methodologies.
 
 ##FBO Ping-Pong
+
+Before even trying to implement any of the flocking sub-behaviors, I wanted to make sure I could work with a particle system that could easily and effortlessly give me the ability to have any particle in question query every other particle in the system. I would perform a simple neighbor count lookup and alter the particle's RGB in respect to this neighbor count.
+
 
 
 
