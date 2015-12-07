@@ -53,5 +53,8 @@ With FBO Ping-Pong out the window I quickly found information on Transform Feedb
 
 An [excellent write-up](http://programming4.us/multimedia/9888.aspx) goes into extensive detail in regard to flocking and transform feedback. It explains that the algorithm is implemented with a pair of vertex shaders. With each flock member represented as a vertex containing position and velocity, which are both updated within the first vertex shader. This vertex information is recieved by a buffer [transform feedback] and injected into a second vertex shader responsible for transforming/calculating the flock-member's mesh (such as a paper airplane). This occurs in every iteration, reusing the position and velocity data calculated in the previous pass.
 
+##Compute Shaders
+<img align="right" src = "http://i.imgur.com/lOSca0A.png">
+Despite the promising outlook that Transform Feedback gave off, I never delved as far into an implementation as I did with an FBO ping-pong based particle system. Also, the methodology seemed to also be a bit *too* low level for what I wanted to get into. Luckily enough, I ran into an chapter in [this](https://books.google.com/books?id=Nwo0CgAAQBAJ&pg=PT700&lpg=PT700&dq=flocking+compute+shader&source=bl&ots=LoRVYlLst6&sig=FD1_GkEaXn5rDnwIPNMyiETCLWw&hl=en&sa=X&ved=0ahUKEwjhoITF7sXJAhUKdD4KHfYnCDEQ6AEIMTAF#v=onepage&q=flocking%20compute%20shader&f=false) book that goes into detail on compute shaders in regard to flocking. In an essence, compute shaders share a lot in common with transform feedback, but is morer high-end oriented.
 
 What set off to be an AI study gradually turned into a graphics study buy the end of it
