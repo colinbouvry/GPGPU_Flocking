@@ -20,8 +20,9 @@ As you can imagine, things slow up very quickly for every new boid that enters t
 
 ##Initial Research
 
+It doesn't take many Google searches to realize on of the best people in the game for Flocking on the GPU is [Robert Hodgin](http://roberthodgin.com/), a creative coder in Brooklyn. Robert has developed a variety of projects that display flocking on the GPU, such as his "Murmuration" or "Boil Up" 
 
-
+<img align="left" src = "http://i.imgur.com/diTI9rE.jpg">
 
 
 
