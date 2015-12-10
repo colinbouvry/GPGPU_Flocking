@@ -242,7 +242,7 @@ CINDER_APP(GPGPU_FlockingApp, RendererGl, [](App::Settings *settings) {
 	settings->setWindowSize(1920, 1080);
 	settings->setMultiTouchEnabled(false);
 	settings->disableFrameRate();
-	settings->setBorderless(true);//settings->setFullScreen(true);
+	settings->setFullScreen(true);
 	//settings->setConsoleWindowEnabled(true);
 })
 

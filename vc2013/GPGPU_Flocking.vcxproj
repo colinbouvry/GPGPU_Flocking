@@ -50,7 +50,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\john.parsaie\Desktop\cinder_0.9.0_vc2013\include;C:\Users\parsaiej\Desktop\cinder_0.9.0_vc2013\include;..\include;..\..\Desktop\cinder_0.9.0_vc2013\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\john.parsaie\Desktop\cinder_0.9.0_vc2013\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0601;_WINDOWS;NOMINMAX;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -65,7 +65,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>cinder-$(PlatformToolset)_d.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\john.parsaie\Desktop\cinder_0.9.0_vc2013\lib\msw\x86;C:\Users\parsaiej\Desktop\cinder_0.9.0_vc2013\lib\msw\x86;C:\Users\parsaiej\Desktop\cinder_0.9.0_vc2013\lib\msw\x64;C:\Users\parsaiej\Desktop\cinder_0.9.0_vc2013\lib;..\..\Desktop\cinder_0.9.0_vc2013\lib\msw\$(PlatformTarget)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\john.parsaie\Desktop\cinder_0.9.0_vc2013\lib\msw\x86</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
