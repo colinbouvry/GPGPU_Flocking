@@ -70,4 +70,3 @@ And here was the final result, unfortunately the video takes away a ton of quali
 
 [![ScreenShot](http://i.imgur.com/MCRoBVc.png)](https://www.youtube.com/watch?v=45XUMm1FETw&feature=youtu.be)
 
-What set off to be an AI study gradually turned into a graphics study buy the end of it
