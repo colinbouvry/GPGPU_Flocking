@@ -109,8 +109,8 @@ void GPGPU_FlockingApp::setup()
 	/*### CREATE COLOR PROGRAM */
 	try {
 		//Load vert and frag pass-thru shaders.
-		mRenderProg = gl::GlslProg::create(gl::GlslProg::Format().vertex(loadFile("shaders/particleRender.vert")) //change loadFile() to loadAsset() if running debugger.
-			.fragment(loadFile("shaders/particleRender.frag"))
+		mRenderProg = gl::GlslProg::create(gl::GlslProg::Format().vertex(loadAsset("shaders/particleRender.vert")) //change loadFile() to loadAsset() if running debugger.
+			.fragment(loadAsset("shaders/particleRender.frag"))
 															     .attribLocation("particleId", 0));
 	}
 	catch (gl::GlslProgCompileExc e) {
@@ -133,7 +133,7 @@ void GPGPU_FlockingApp::setup()
 	/*### CREATE UPDATE PROGRAM ###*/
 	try {
 		//Load our compute shader.
-		mUpdateProg = gl::GlslProg::create(gl::GlslProg::Format().compute(loadFile("shaders/particleUpdate.comp")));
+		mUpdateProg = gl::GlslProg::create(gl::GlslProg::Format().compute(loadAsset("shaders/particleUpdate.comp")));
 	}
 	catch (gl::GlslProgCompileExc e) {
 		//Catch any shader compilation errors and throw to console.
